@@ -1,0 +1,13 @@
+{
+  "name": "Focus On Reading",
+  "description": "The extension that helps you focus by blurring other parts of a page you did not select",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html"
+  },
+  "devtools_page": "index.html"
+}

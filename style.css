@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif, monospace;
+}
+
+.extension-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc(max-content + 2rem);
+  height: calc(max-content + 2rem);
+  padding: 1rem 2rem;
+  z-index: 10;
+}
+
+.extension-header {
+  width: max-content;
+  font-size: calc(12px + 1vw);
+  margin-bottom: 1rem;
+}
+
+.extension-description {
+  width: max-content;
+  font-size: calc(6.5px + 1vw);
+  margin-bottom: 1.5rem;
+}
+
+.extension-start--button {
+  border: none;
+  padding: 1rem 2rem;
+  background-color: rgb(235, 222, 207);
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.35);
+  transition: 0.1s all ease-in;
+  cursor: pointer;
+}
+
+.extension-start--button:hover {
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.15);
+  background-color: rgb(245, 232, 217);
+}
+
+.extension-start--button:active {
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.55);
+  background-color: rgb(225, 212, 197);
+}
+
+.selecting-process-alert {
+  font-size: large;
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
+
+.selection-layer {
+  width: 100vw;
+  height: 100vh;
+  z-index: 9;
+  background-color: transparent;
+  cursor: pointer;
+}
